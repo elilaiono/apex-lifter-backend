@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 8080
 const dotenv = require('dotenv')
-const { db } = require('./db/firebase')
 const cors = require('cors')
 
 dotenv.config();
