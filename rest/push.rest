@@ -6,10 +6,10 @@ POST http://localhost:8080/push/add HTTP/1.1
 Content-Type: application/json
 
 {
-  "exerciseName": "Dumbbell Bench Press",
-  "description": "Just like a bench press, put you'll use dumbbells",
-  "equipment": "Dumbbells, Bench",
+  "exerciseName": "Overhead Press",
+  "description": "Perform the overhead press by standing with feet shoulder-width apart, holding a barbell or dumbbells at shoulder level, then pressing the weight upward until arms are fully extended overhead.",
+  "equipment": "Barbell or Dumbbells",
   "difficultyLevel": "Intermediate",
-  "duration": "30 minutes",
-  "additionalNotes": "Focus on maintaining proper form and controlled movements."
+  "duration": "3 sets of 8-12 reps",
+  "additionalNotes": "Maintain proper form, engaging the core and keeping the back straight. Avoid excessive arching of the lower back and use controlled movements."
 }

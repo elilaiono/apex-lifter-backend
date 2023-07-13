@@ -7,11 +7,12 @@ POST http://localhost:8080/legs/add HTTP/1.1
 Content-Type: application/json
 
 {
-  "exerciseName": "Lunges",
-  "description": "Step forward with one leg, lowering your body until your front knee is at a 90-degree angle. Push back up to the starting position and repeat with the other leg.",
-  "equipment": "None (bodyweight exercise)",
+  "exerciseName": "Leg Press",
+  "description": "Perform the leg press by sitting on a leg press machine, placing feet on the footplate shoulder-width apart, and pushing the weight away using your legs until your knees are fully extended, then slowly lowering the weight back to the starting position.",
+  "equipment": "Leg Press Machine",
   "difficultyLevel": "Beginner",
-  "duration": "15 mins",
-  "additionalNotes": "Keep your upper body straight and engage your core for stability."
+  "duration": "3 sets of 10-12 reps",
+  "additionalNotes": "Maintain proper form, keeping your back against the seat and your knees aligned with your feet. Start with a comfortable weight and gradually increase as you build strength."
 }
+
 

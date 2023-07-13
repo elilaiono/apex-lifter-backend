@@ -30,6 +30,20 @@ const createUser = async (req, res) => {
   }
 };
 
+const checkEmailExists = async (req, res) => {
+  try {
+    const { email } = req.query;
+
+    const usersSnapshot = await db.collection('users').where('email', '==', email).get();
+    const emailExists = !usersSnapshot.empty;
+
+    res.status(200).json({ emailExists });
+  } catch (error) {
+    console.error('Error checking email existence:', error);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+};
+
   const getAll = async (req, res) => {
     try {
       const usersSnapshot = await db.collection('users').get();
@@ -75,6 +89,7 @@ const createUser = async (req, res) => {
 
   module.exports = { 
     createUser,
+    checkEmailExists,
     getAll,
     getById,
   }
